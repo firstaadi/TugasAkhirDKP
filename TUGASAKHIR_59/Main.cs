@@ -14,6 +14,7 @@ namespace TUGASAKHIR_59
     {
         private void DecToHex()
         {
+
             textBox2.Text = String.Empty;
             int decimalNumber, hasilBagi;
             int i = 1, j, temp = 0;
@@ -22,23 +23,34 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out decimalNumber);
-            hasilBagi = decimalNumber;
-            while (hasilBagi != 0)
+            if (decimalNumber >= 0)
             {
-                temp = hasilBagi % 16;
-                if (temp < 10)
-                    temp = temp + 48;
-                else
-                    temp = temp + 55;
-                temp1 = Convert.ToChar(temp);
-                hexadecimalNumber[i++] = temp1;
-                hasilBagi = hasilBagi / 16;
-            }
+                hasilBagi = decimalNumber;
+                while (hasilBagi != 0)
+                {
+                    temp = hasilBagi % 16;
+                    if (temp < 10)
+                        temp = temp + 48;
+                    else
+                        temp = temp + 55;
+                    temp1 = Convert.ToChar(temp);
+                    hexadecimalNumber[i++] = temp1;
+                    hasilBagi = hasilBagi / 16;
+                }
 
-            textBox2.Text = textBox1.Text + " nilai hexanya adalah ";
-            for (j = i - 1; j > 0; j--)
+                textBox2.Text = textBox1.Text + " nilai hexanya adalah ";
+                for (j = i - 1; j > 0; j--)
+                {
+                    textBox2.Text += hexadecimalNumber[j];
+                }
+            }
+            else if (decimalNumber is String)
             {
-                textBox2.Text += hexadecimalNumber[j];
+                textBox2.Text = "Masukan Salah";
+            }
+            else
+            {
+                textBox2.Text = "Masukan Salah"; 
             }
         }
         private void DecToBin()
@@ -49,15 +61,22 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out n);
-            for (i = 0; n > 0; i++)
+            if (n >= 0)
             {
-                a[i] = n % 2;
-                n = n / 2;
+                for (i = 0; n > 0; i++)
+                {
+                    a[i] = n % 2;
+                    n = n / 2;
+                }
+                textBox2.Text = textBox1.Text + " nilai binernya adalah ";
+                for (i = i - 1; i >= 0; i--)
+                {
+                    textBox2.Text += a[i];
+                }
             }
-            textBox2.Text = textBox1.Text + " nilai binernya adalah ";
-            for (i = i - 1; i >= 0; i--)
+            else
             {
-                textBox2.Text += a[i];
+                textBox2.Text = "Masukan Salah";
             }
         }
         private void DecToOctal()
@@ -68,16 +87,23 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out nilai);
-            hasilBagi = nilai;
-            while (hasilBagi != 0)
+            if (nilai >= 0)
             {
-                nilaiOctal[i++] = hasilBagi % 8;
-                hasilBagi = hasilBagi / 8;
+                hasilBagi = nilai;
+                while (hasilBagi != 0)
+                {
+                    nilaiOctal[i++] = hasilBagi % 8;
+                    hasilBagi = hasilBagi / 8;
+                }
+                textBox2.Text = textBox1.Text + " nilai octalnya adalah ";
+                for (j = i - 1; j > 0; j--)
+                {
+                    textBox2.Text += nilaiOctal[j];
+                }
             }
-            textBox2.Text = textBox1.Text + " nilai octalnya adalah ";
-            for (j = i - 1; j > 0; j--)
+            else
             {
-                textBox2.Text += nilaiOctal[j];
+                textBox2.Text = "Masukan Salah";
             }
         }
     

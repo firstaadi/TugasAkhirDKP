@@ -9,3 +9,14 @@ C:\Users\firsta\source\repos\TUGASAKHIR_59\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59
 C:\Users\firsta\source\repos\TUGASAKHIR_59\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.exe
 C:\Users\firsta\source\repos\TUGASAKHIR_59\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.pdb
 C:\Users\firsta\source\repos\TUGASAKHIR_59\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.Main.resources
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\bin\Debug\TUGASAKHIR_59.exe.config
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\bin\Debug\TUGASAKHIR_59.exe
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\bin\Debug\TUGASAKHIR_59.pdb
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.csprojAssemblyReference.cache
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.Form1.resources
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.Main.resources
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.Properties.Resources.resources
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.csproj.GenerateResource.cache
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.csproj.CoreCompileInputs.cache
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.exe
+E:\Document - Drive E\GitHub\TugasAkhirDKP\TUGASAKHIR_59\obj\Debug\TUGASAKHIR_59.pdb
