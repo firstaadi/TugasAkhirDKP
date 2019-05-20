@@ -114,6 +114,7 @@ namespace TUGASAKHIR_59
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             label1.Text = "Selamat Datang\n " + nama;
+            textBox2.ReadOnly = true;
         }
 
 
@@ -140,6 +141,15 @@ namespace TUGASAKHIR_59
         private void button3_Click(object sender, EventArgs e)
         {
             DecToOctal();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!char.IsDigit(ch) && ch !=8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
