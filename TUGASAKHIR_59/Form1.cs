@@ -17,6 +17,7 @@ namespace TUGASAKHIR_59
             InitializeComponent();
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            namaBox.MaxLength = 20;
         }
 
         private void label1_Click(object sender, EventArgs e)

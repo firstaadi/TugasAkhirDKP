@@ -18,7 +18,7 @@ namespace TUGASAKHIR_59
             textBox2.Text = String.Empty;
             int decimalNumber, hasilBagi;
             int i = 1, j, temp = 0;
-            char[] hexadecimalNumber = new char[100];
+            char[] hexadecimalNumber = new char[80];
             char temp1;
 
             string masukan = textBox1.Text;
@@ -116,6 +116,7 @@ namespace TUGASAKHIR_59
             this.label2.BackColor = System.Drawing.Color.Transparent;
             label1.Text = "Selamat Datang\n " + nama;
             textBox2.ReadOnly = true;
+            textBox1.MaxLength = 9;
         }
 
 
