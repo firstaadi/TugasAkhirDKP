@@ -23,7 +23,7 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out decimalNumber);
-            if (decimalNumber >= 0)
+            if (textBox1.Text != String.Empty)
             {
                 hasilBagi = decimalNumber;
                 while (hasilBagi != 0)
@@ -38,20 +38,19 @@ namespace TUGASAKHIR_59
                     hasilBagi = hasilBagi / 16;
                 }
 
+
                 textBox2.Text = textBox1.Text + " nilai hexanya adalah ";
                 for (j = i - 1; j > 0; j--)
                 {
                     textBox2.Text += hexadecimalNumber[j];
                 }
             }
-            else if (decimalNumber is String)
-            {
-                textBox2.Text = "Masukan Salah";
-            }
             else
             {
-                textBox2.Text = "Masukan Salah"; 
+                textBox2.Text = "Masukan kosong";
             }
+
+
         }
         private void DecToBin()
         {
@@ -61,7 +60,7 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out n);
-            if (n >= 0)
+            if (textBox1.Text != String.Empty)
             {
                 for (i = 0; n > 0; i++)
                 {
@@ -76,8 +75,9 @@ namespace TUGASAKHIR_59
             }
             else
             {
-                textBox2.Text = "Masukan Salah";
+                textBox2.Text = "Masukan kosong";
             }
+            
         }
         private void DecToOctal()
         {
@@ -87,7 +87,7 @@ namespace TUGASAKHIR_59
 
             string masukan = textBox1.Text;
             int.TryParse(masukan, out nilai);
-            if (nilai >= 0)
+            if (textBox1.Text != String.Empty)
             {
                 hasilBagi = nilai;
                 while (hasilBagi != 0)
@@ -103,8 +103,9 @@ namespace TUGASAKHIR_59
             }
             else
             {
-                textBox2.Text = "Masukan Salah";
+                textBox2.Text = "Masukan kosong";
             }
+
         }
     
 
