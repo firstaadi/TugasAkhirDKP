@@ -129,7 +129,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Main";
             this.ShowIcon = false;
-            this.Text = "Main";
+            this.Text = "APLIKASI KONVERSI BILANGAN DESIMAL KE HEXADECIMAL, OCTAL, DAN BINARY";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
