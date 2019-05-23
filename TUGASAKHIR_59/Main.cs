@@ -117,6 +117,7 @@ namespace TUGASAKHIR_59
             label1.Text = "Selamat Datang\n " + nama;
             textBox2.ReadOnly = true;
             textBox1.MaxLength = 9;
+            MaximizeBox = false;
         }
 
 

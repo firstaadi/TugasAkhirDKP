@@ -18,6 +18,7 @@ namespace TUGASAKHIR_59
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             namaBox.MaxLength = 20;
+            MaximizeBox = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace TUGASAKHIR_59
             Main main = new Main(name.getNama());
             main.Show();
             this.Hide();
+            
         }
 
         private void namaBox_TextChanged(object sender, EventArgs e)
@@ -42,6 +44,15 @@ namespace TUGASAKHIR_59
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void namaBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsLetter(ch) && ch != 32 && ch != 8)
+                {
+                e.Handled = true;
+            }
         }
     }
 }

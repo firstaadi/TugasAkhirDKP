@@ -77,6 +77,7 @@
             this.namaBox.TabIndex = 4;
             this.namaBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.namaBox.TextChanged += new System.EventHandler(this.namaBox_TextChanged);
+            this.namaBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.namaBox_KeyPress);
             // 
             // Form1
             // 
